@@ -1,0 +1,142 @@
+body {
+    background-size: cover;
+    background-image: url(tlo.png);
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #9bafd9;
+}
+
+h1 {
+    font-family: "Syne", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+h1:hover {
+    cursor: pointer;
+    font-size: 35px;
+    text-shadow: 0 0 10px #fff, 0 0 30px #9bafd9;
+    transition: 0.3s;
+}
+
+table {
+    border: 1px solid black;
+    color: black;
+}
+
+th {
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+}
+
+th:hover {
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff, 0 0 30px #9bafd9;
+    transition: 0.3s;
+    box-shadow: 0 0 15px white;
+    color: white;
+}
+
+td {
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+td:hover {
+    font-weight: bold;
+    box-shadow: 0 0 15px #9bafd9;
+}
+
+#nazwa{
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#nazwa:hover{
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #9bafd9, 0 0 30px #9bafd9;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #9bafd9;
+    
+}
+#data {
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+#data:hover {
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #fff, 0 0 30px white;
+    transition: 0.3s;
+    box-shadow: 0 0 15px white;
+    color: white;
+}
+#jezyk_php{
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#jezyk_php:hover {
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px purple, 0 0 30px purple;
+    transition: 0.3s;
+    box-shadow: 0 0 15px purple;
+    color: purple;
+}
+#jezyk_react{
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#jezyk_react:hover{
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #0974f1, 0 0 30px #0974f1;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #0974f1;
+    color: #0974f1;
+}
+#jezyk_java{
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#jezyk_java:hover{
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #ffcb6b, 0 0 30px #ffcb6b;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #ffcb6b;
+    color: #ffcb6b;
+}
+deb8f5
+
+#jezyk_python{
+    font-family: "JetBrains Mono", monospace;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+#jezyk_python:hover{
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    text-shadow: 0 0 10px #deb8f5, 0 0 30px #deb8f5;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #deb8f5;
+    color: #deb8f5;
+}
