@@ -262,3 +262,10 @@ footer {
     box-shadow: none;
     font-weight: normal;
 }
+
+.table-wrapper {
+    width: 100%;
+    max-height: 700px;
+    overflow-y: auto;
+    /* border: 1px solid #555; */
+}
