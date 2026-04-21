@@ -190,4 +190,5 @@ deb8f5
 
 .menu-btn:hover {
     filter: drop-shadow(0 0 6px #9bafd9);
+    color: white;
 }
