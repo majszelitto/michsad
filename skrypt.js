@@ -1,3 +1,5 @@
+// LACZENIE SIE Z BAZA
+
 
         const SUPABASE_URL = 'https://nsblozqghfvdpzumfqhl.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5zYmxvenFnaGZ2ZHB6dW1mcWhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3MTE5MDgsImV4cCI6MjA5MjI4NzkwOH0.oEK-fkp1hUsKn3xVDC4HyT-nZUrlcEvO1RQ5NMqut9I';
@@ -34,3 +36,18 @@
         }
 
         pobierzSkrypty();
+
+// SIDEBAR
+    const menuBtn = document.getElementById('menu-btn');
+    const sidebar = document.querySelector('.sidebar');
+
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('otwarty');
+    });
+
+    // kliknięcie poza sidebar zamyka go
+    document.addEventListener('click', (e) => {
+        if (!sidebar.contains(e.target) && e.target !== menuBtn) {
+            sidebar.classList.remove('otwarty');
+        }
+    });
