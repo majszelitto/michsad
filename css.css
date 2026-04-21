@@ -192,3 +192,18 @@ deb8f5
     filter: drop-shadow(0 0 6px #9bafd9);
     color: white;
 }
+
+.search-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 200;
+    color: black;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    filter: drop-shadow(0 0 6px #9bafd9);
+    color: white;
+}
