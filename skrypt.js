@@ -29,7 +29,7 @@ async function pobierzSkrypty() {
             if (videoId) {
                 embedHTML = `
                     <tr>
-                        <td colspan="3" style="padding: 10px;">
+                        <td colspan="3" class="td-video" style="padding: 10px;">
                             <iframe 
                                 width="100%" 
                                 height="200" 
