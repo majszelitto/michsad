@@ -1,5 +1,5 @@
 
-        const SUPABASE_URL = 'https://nsblozqghfvdpzumfqhl.supabase.co/rest/v1/';
+        const SUPABASE_URL = 'https://nsblozqghfvdpzumfqhl.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5zYmxvenFnaGZ2ZHB6dW1mcWhsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3MTE5MDgsImV4cCI6MjA5MjI4NzkwOH0.oEK-fkp1hUsKn3xVDC4HyT-nZUrlcEvO1RQ5NMqut9I';
 
         async function pobierzSkrypty() {
