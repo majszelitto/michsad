@@ -140,3 +140,34 @@ deb8f5
     box-shadow: 0 0 15px #deb8f5;
     color: #deb8f5;
 }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border-right: 1px solid #555;
+    gap: 15px;
+}
+
+.sidebar a {
+    font-family: "JetBrains Mono", monospace;
+    color: #9bafd9;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    border: 1px solid #9bafd9;
+    box-shadow: 0 0 10px #9bafd9;
+    text-shadow: 0 0 8px #9bafd9;
+}
