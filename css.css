@@ -269,3 +269,20 @@ footer {
     overflow-y: auto;
     /* border: 1px solid #555; */
 }
+
+.table-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background:  #333333;
+    border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background:  #333333;
+}
