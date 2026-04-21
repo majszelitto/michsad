@@ -4,44 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona Główna</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Herb.png">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 
-<div class="menu-btn" id="menu-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-    </svg>
-</div>
+    <!-- PRZYCISKI STAŁE -->
+    <div class="menu-btn" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
 
-<div class="search-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
-        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-    </svg>
-</div>
+    <div class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+    </div>
 
-<div class="sidebar">
-    <a href="index.html">STRONA GŁÓWNA</a>
-    <a href="#">SKRYPTY</a>
-    <a href="#">O MNIE</a>
-</div>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <a href="index.html">STRONA GŁÓWNA</a>
+        <a href="skrypty.html">SKRYPTY</a>
+        <a href="#">O MNIE</a>
+    </div>
 
-    <h1>Witaj na mojej stronie!</h1><br>
+    <!-- HEADER -->
+    <header>
+        <h1>Witaj na mojej stronie!</h1>
+    </header>
 
-    <table>
-        <tr>
-            <th>NAZWA</th>
-            <th>DATA</th>
-            <th>JEZYK</th>
-        </tr>
-        <tbody id="skrypty-lista">
-            <tr><td colspan="3" style="color:white;">Ładowanie...</td></tr>
-        </tbody>
-    </table>
+    <!-- MAIN -->
+    <main>
+        <section class="sekcja-skrypty">
+            <h2>SKRYPTY</h2>
+            <div class="table-wrapper">
+                <table>
+                    <tr>
+                        <th>NAZWA</th>
+                        <th>DATA</th>
+                        <th>JEZYK</th>
+                    </tr>
+                    <tbody id="skrypty-lista">
+                        <tr><td colspan="3" style="color:white;">Ładowanie...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
-<script src="skrypt.js"></script>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Michał Sadownik</p>
+    </footer>
+
+    <script src="skrypt.js"></script>
 </body>
 </html>
