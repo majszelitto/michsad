@@ -41,7 +41,11 @@
     const menuBtn = document.getElementById('menu-btn');
     const sidebar = document.querySelector('.sidebar');
 
-    menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', (e) => {
+        menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // ← to zatrzymuje "bąbelkowanie" do document
+    sidebar.classList.toggle('otwarty');
+});
         sidebar.classList.toggle('otwarty');
     });
 
