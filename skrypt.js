@@ -38,20 +38,16 @@
         pobierzSkrypty();
 
 // SIDEBAR
-    const menuBtn = document.getElementById('menu-btn');
-    const sidebar = document.querySelector('.sidebar');
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.querySelector('.sidebar');
 
-    menuBtn.addEventListener('click', (e) => {
-        menuBtn.addEventListener('click', (e) => {
-    e.stopPropagation(); // ← to zatrzymuje "bąbelkowanie" do document
+menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     sidebar.classList.toggle('otwarty');
 });
-        sidebar.classList.toggle('otwarty');
-    });
 
-    // kliknięcie poza sidebar zamyka go
-    document.addEventListener('click', (e) => {
-        if (!sidebar.contains(e.target) && e.target !== menuBtn) {
-            sidebar.classList.remove('otwarty');
-        }
-    });
+document.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && e.target !== menuBtn) {
+        sidebar.classList.remove('otwarty');
+    }
+});
