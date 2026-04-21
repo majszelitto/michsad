@@ -38,12 +38,14 @@ p {
 table {
     border: 1px solid black;
     color: black;
+    width: 600px;
     margin: 0 auto;
 }
 
 th {
     font-family: "JetBrains Mono", monospace;
     border: 1px solid black;
+    padding: 10px 20px;
 }
 
 th:hover {
@@ -59,6 +61,7 @@ td {
     font-family: "JetBrains Mono", monospace;
     border: 1px solid black;
     transition: 0.3s;
+    padding: 8px 20px;
 }
 
 td:hover {
