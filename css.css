@@ -143,7 +143,7 @@ deb8f5
 
 .sidebar {
     position: fixed;
-    left: 0;
+    left: -220px;
     top: 0;
     width: 200px;
     height: 100vh;
@@ -154,6 +154,12 @@ deb8f5
     box-sizing: border-box;
     border-right: 1px solid #555;
     gap: 15px;
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+
+.sidebar.otwarty {
+    left: 0;
 }
 
 .sidebar a {
@@ -170,4 +176,13 @@ deb8f5
     border: 1px solid #9bafd9;
     box-shadow: 0 0 10px #9bafd9;
     text-shadow: 0 0 8px #9bafd9;
+}
+
+.menu-btn {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    filter: drop-shadow(0 0 6px #9bafd9);
 }
