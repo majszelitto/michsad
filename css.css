@@ -245,13 +245,6 @@ main {
     margin-bottom: 15px;
 }
 
-.table-wrapper {
-    width: 100%;
-    max-height: 400px;
-    overflow-y: auto;
-    /* border: 1px solid #555; */
-}
-
 footer {
     width: 100%;
     text-align: center;
@@ -260,4 +253,9 @@ footer {
     color: #555;
     font-size: 12px;
     border-top: 1px solid #333;
+}
+
+.td-video:hover {
+    box-shadow: none;
+    font-weight: normal;
 }
