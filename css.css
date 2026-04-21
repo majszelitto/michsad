@@ -179,7 +179,11 @@ deb8f5
 }
 
 .menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
     cursor: pointer;
+    z-index: 200;
     transition: 0.3s;
 }
 
