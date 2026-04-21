@@ -185,6 +185,7 @@ deb8f5
     cursor: pointer;
     z-index: 200;
     transition: 0.3s;
+    color: white;
 }
 
 .menu-btn:hover {
