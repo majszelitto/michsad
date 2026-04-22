@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | English with Alex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">English<span>with</span>Alex</a>
+        <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="o-mnie.html">O Mnie</a></li>
+            <li><a href="oferta.html">Oferta</a></li>
+            <li><a href="opinie.html">Opinie</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div style="height: 70px;"></div>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Skontaktuj Się Ze Mną</h2>
+        <p>Odpisuję zazwyczaj w ciągu 2 godzin</p>
+        <div class="line"></div>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h3>Dane Kontaktowe</h3>
+            
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <span>aleksander@englishwithalex.pl</span>
+            </div>
+            
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <span>+48 512 345 678</span>
+            </div>
+            
+            <div class="info-box">
+                <i class="fab fa-facebook-messenger"></i>
+                <span>Messenger: @englishwithalex</span>
+            </div>
+            
+            <div class="info-box">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp: +48 512 345 678</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram: @english_with_alex</span>
+            </div>
+
+            <h3 style="margin-top: 30px;">Godziny Pracy</h3>
+            <div class="info-box">
+                <i class="fas fa-clock"></i>
+                <span>Poniedziałek - Piątek: 8:00 - 21:00<br>Sobota: 9:00 - 15:00<br>Niedziela: Zamknięte</span>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <h3 style="font-size: 22px; color: #2c3e50; margin-bottom: 25px;">Formularz Zapisu</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Imię i nazwisko</label>
+                    <input type="text" name="name" placeholder="Twoje imię" required>
+                </div>
+                <div class="form-group">
+                    <label>Wiek</label>
+                    <input type="number" name="age" placeholder="Twój wiek" min="5" max="100">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="twoj@email.pl" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon / WhatsApp</label>
+                    <input type="tel" name="phone" placeholder="+48 123 456 789">
+                </div>
+                <div class="form-group">
+                    <label>Obecny poziom angielskiego</label>
+                    <select name="level">
+                        <option value="">-- Wybierz poziom --</option>
+                        <option value="a1">A1 - Początkujący</option>
+                        <option value="a2">A2 - Podstawowy</option>
+                        <option value="b1">B1 - Średniozaawansowany</option>
+                        <option value="b2">B2 - Średniozaawansowany wyższy</option>
+                        <option value="c1">C1 - Zaawansowany</option>
+                        <option value="nie-wiem">Nie wiem / nie jestem pewny</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Rodzaj kursu</label>
+                    <select name="course">
+                        <option value="">-- Wybierz kurs --</option>
+                        <option value="ogolny">Angielski ogólny</option>
+                        <option value="egzaminy">Przygotowanie do egzaminów (FCE/CAE/IELTS)</option>
+                        <option value="biznesowy">Angielski biznesowy</option>
+                        <option value="konwersacje">Konwersacje</option>
+                        <option value="dzieci">Dla dzieci / młodzieży</option>
+                        <option value="inne">Inne / nie wiem jeszcze</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferowane dni i godziny</label>
+                    <input type="text" name="schedule" placeholder="np. wtorki i czwartki po 17:00">
+                </div>
+                <div class="form-group">
+                    <label>Wiadomość (opcjonalnie)</label>
+                    <textarea name="message" placeholder="Napisz krótko o swoich celach, czego chcesz się nauczyć..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark" style="width: 100%; border: none;">Wyślij Zgłoszenie</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="stats-bar">
+    <div style="text-align: center;">
+        <h2 style="font-size: 32px; color: #fff; margin-bottom: 15px;">Pierwsza Lekcja z 50% Zniżką!</h2>
+        <p style="color: rgba(255,255,255,0.8); margin-bottom: 25px;">Sprawdź, czy moje metody Ci odpowiadają — bez zobowiązań.</p>
+        <p style="color: rgba(255,255,255,0.6); font-size: 14px;">Lekcja próbna (60 min) — tylko 60 zł zamiast 120 zł</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 English with Alex. Wszelkie prawa zastrzeżone.</p>
+    <a href="../../omnie.html" class="back-link">&larr; Powrót do Portfolio</a>
+</footer>
+
+</body>
+</html>
