@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mnie</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Herb.png">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="/_vercel/speed-insights/script.js"></script>
+    <style>
+        .omnie-container {
+            max-width: 1000px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .omnie-intro {
+            margin-bottom: 50px;
+        }
+
+        .omnie-intro h2 {
+            font-family: "JetBrains Mono", monospace;
+            color: #9bafd9;
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .omnie-intro p {
+            font-family: "Syne", sans-serif;
+            color: #ccc;
+            font-size: 14px;
+            line-height: 1.8;
+            text-shadow: none;
+            transition: none;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            width: 100%;
+        }
+
+        .portfolio-card {
+            background: rgba(30, 30, 35, 0.85);
+            border: 1px solid #444;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.4s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-card:hover {
+            border-color: #9bafd9;
+            box-shadow: 0 0 25px rgba(155, 175, 217, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .portfolio-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-card-content {
+            padding: 20px;
+            text-align: left;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-card-content h3 {
+            font-family: "Syne", sans-serif;
+            color: white;
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        .portfolio-card-content p {
+            font-family: "JetBrains Mono", monospace;
+            color: #888;
+            font-size: 12px;
+            line-height: 1.6;
+            margin: 0;
+            text-shadow: none;
+            transition: none;
+            flex: 1;
+        }
+
+        .portfolio-card-content .card-tag {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 6px 14px;
+            border: 1px solid #9bafd9;
+            border-radius: 20px;
+            font-family: "JetBrains Mono", monospace;
+            font-size: 11px;
+            color: #9bafd9;
+            text-align: center;
+            align-self: flex-start;
+            transition: 0.3s;
+        }
+
+        .portfolio-card:hover .card-tag {
+            background: #9bafd9;
+            color: #1a1a1a;
+        }
+
+        .tech-stack {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+        }
+
+        .tech-stack h3 {
+            font-family: "Syne", sans-serif;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .tech-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .tech-icon {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 12px;
+            color: #666;
+            padding: 8px 16px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .tech-icon:hover {
+            border-color: #9bafd9;
+            color: #9bafd9;
+            box-shadow: 0 0 10px rgba(155, 175, 217, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-btn" id="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+
+    <div class="search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="30" height="30">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+    </div>
+
+    <div class="sidebar">
+        <a href="index.html">STRONA GLOWNA</a>
+        <a href="skrypty.html">SKRYPTY</a>
+        <a href="omnie.html">O MNIE</a>
+    </div>
+
+    <header>
+        <h1>O MNIE</h1>
+    </header>
+
+    <main>
+        <div class="omnie-container">
+            <section class="omnie-intro">
+                <h2>Cześć, jestem Michał — tworzę strony internetowe.</h2>
+                <p>Poniżej znajdziesz trzy przykładowe witryny, które zbudowałem jako portfolio. Każda z nich to kompletna strona wizytówkowa z formularzem kontaktowym, podstronami i unikalnym designem dopasowanym do branży.</p>
+            </section>
+
+            <section class="portfolio-grid">
+                <a href="portfolio/fryzjer/index.html" class="portfolio-card">
+                    <img src="https://www.dirsalonfurniture.com/cdn/shop/articles/Modern_Salon_Ideas.jpg?v=1742797143" alt="Salon fryzjerski">
+                    <div class="portfolio-card-content">
+                        <h3>Salon Fryzjerski</h3>
+                        <p>Elegancka strona wizytówkowa dla zakładu fryzjerskiego. Zawiera prezentację usług, galerię prac, cennik oraz formularz kontaktowy z możliwością umówienia wizyty.</p>
+                        <span class="card-tag">Zobacz witrynę &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="portfolio/mechanik/index.html" class="portfolio-card">
+                    <img src="https://scottsauto.com/wp-content/uploads/2024/08/6-Auto-Repair-Tasks-You-Should-Leave-to-a-Professional_resized.png" alt="Warsztat samochodowy">
+                    <div class="portfolio-card-content">
+                        <h3>Warsztat Samochodowy</h3>
+                        <p>Profesjonalna witryna dla warsztatu mechanicznego. Zawiera opis usług naprawczych, cennik napraw, informacje o zespole oraz formularz zgłoszeniowy do umówienia wizyty.</p>
+                        <span class="card-tag">Zobacz witrynę &rarr;</span>
+                    </div>
+                </a>
+
+                <a href="portfolio/tutoring/index.html" class="portfolio-card">
+                    <img src="https://tutorax.com/wp-content/uploads/2021/11/Orthopedagogue-rencontre-orthopedagogie.jpg" alt="Tutoring języka angielskiego">
+                    <div class="portfolio-card-content">
+                        <h3>Tutoring Angielskiego</h3>
+                        <p>Nowoczesna strona dla korepetytora języka angielskiego. Oferuje prezentację metod nauki, program zajęć, opinie uczniów oraz formularz kontaktowy do zapisania się na lekcję.</p>
+                        <span class="card-tag">Zobacz witrynę &rarr;</span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="tech-stack">
+                <h3>Technologie, których używam</h3>
+                <div class="tech-icons">
+                    <span class="tech-icon">HTML5</span>
+                    <span class="tech-icon">CSS3</span>
+                    <span class="tech-icon">JavaScript</span>
+                    <span class="tech-icon">PHP</span>
+                    <span class="tech-icon">Python</span>
+                    <span class="tech-icon">Supabase</span>
+                    <span class="tech-icon">React</span>
+                    <span class="tech-icon">MineScript</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Michał Sadownik</p>
+    </footer>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
