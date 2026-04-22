@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Salon Elegancja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">ELEGANCJA</a>
+        <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="o-nas.html">O Nas</a></li>
+            <li><a href="uslugi.html">Usługi</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div style="height: 70px;"></div>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Skontaktuj Się z Nami</h2>
+        <div class="line"></div>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h3>Dane Kontaktowe</h3>
+            
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <span>ul. Marszałkowska 42<br>00-554 Warszawa</span>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-phone"></i></div>
+                <span>+48 22 123 45 67</span>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                <span>kontakt@salon-elegancja.pl</span>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-icon"><i class="fab fa-instagram"></i></div>
+                <span>@salon_elegancja</span>
+            </div>
+
+            <h3 style="margin-top: 40px;">Godziny Otwarcia</h3>
+            <table class="hours-table">
+                <tr><td>Poniedziałek - Piątek</td><td>9:00 - 20:00</td></tr>
+                <tr><td>Sobota</td><td>9:00 - 16:00</td></tr>
+                <tr><td>Niedziela</td><td>Zamknięte</td></tr>
+            </table>
+        </div>
+
+        <div>
+            <h3 style="font-size: 28px; color: #fff; margin-bottom: 25px;">Formularz Kontaktowy</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Imię i nazwisko</label>
+                    <input type="text" name="name" placeholder="Twoje imię i nazwisko" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="twoj@email.pl" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon</label>
+                    <input type="tel" name="phone" placeholder="+48 123 456 789">
+                </div>
+                <div class="form-group">
+                    <label>Wybierz usługę</label>
+                    <select name="service">
+                        <option value="">-- Wybierz usługę --</option>
+                        <option value="strzyzenie-damskie">Strzyżenie damskie</option>
+                        <option value="strzyzenie-meskie">Strzyżenie męskie</option>
+                        <option value="koloryzacja">Koloryzacja</option>
+                        <option value="balayage">Balayage</option>
+                        <option value="pielegnacja">Zabieg pielęgnacyjny</option>
+                        <option value="inne">Inne / nie wiem</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferowany termin</label>
+                    <input type="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label>Wiadomość</label>
+                    <textarea name="message" placeholder="Napisz czego potrzebujesz, jakie masz oczekiwania..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-filled" style="width: 100%; border: none;">Wyślij Wiadomość</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Salon Elegancja. Wszelkie prawa zastrzeżone.</p>
+    <a href="../../omnie.html" class="back-link">&larr; Powrót do Portfolio</a>
+</footer>
+
+</body>
+</html>

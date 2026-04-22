@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon Elegancja | Fryzjerstwo z Pasją</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">ELEGANCJA</a>
+        <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="o-nas.html">O Nas</a></li>
+            <li><a href="uslugi.html">Usługi</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Salon Elegancja</h1>
+        <p>Twój Styl, Nasza Pasja</p>
+        <a href="kontakt.html" class="btn">Umów Wizytę</a>
+    </div>
+</section>
+
+<!-- O NAS -->
+<section class="section">
+    <div class="section-title">
+        <h2>O Naszym Salonie</h2>
+        <div class="line"></div>
+    </div>
+    <div class="about-grid">
+        <img src="https://framerusercontent.com/images/AlvXpDdjJLUQGjmLwlFl3fZwQ.png" alt="Wnętrze salonu" class="about-img">
+        <div class="about-text">
+            <h3>Miejsce, gdzie styl spotyka się z sztuką</h3>
+            <p>Salon Elegancja to wyjątkowe miejsce na mapie Warszawy, gdzie fryzjerstwo staje się prawdziwą sztuką. Od 2015 roku tworzymy niepowtarzalne fryzury, które podkreślają indywidualność każdego klienta.</p>
+            <p>Nasz zespół doświadczonych stylistów nieustannie podnosi kwalifikacje, uczestnicząc w międzynarodowych szkoleniach i pokazach. Pracujemy na najwyższej jakości produktach renomowanych marek.</p>
+            <a href="o-nas.html" class="btn" style="margin-top: 20px;">Poznaj Nas</a>
+        </div>
+    </div>
+</section>
+
+<!-- USŁUGI -->
+<section class="section" style="background: #0a0a0a;">
+    <div class="section-title">
+        <h2>Nasze Usługi</h2>
+        <div class="line"></div>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-cut" style="font-size: 36px; color: #c9a96e;"></i>
+            <h3>Strzyżenie</h3>
+            <p>Klasyczne i nowoczesne cięcia damskie i męskie dopasowane do kształtu twarzy.</p>
+            <div class="price">od 80 zł</div>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-palette" style="font-size: 36px; color: #c9a96e;"></i>
+            <h3>Koloryzacja</h3>
+            <p>Balayage, sombre, ombre oraz pełna gama koloryzacji z użyciem premium farb.</p>
+            <div class="price">od 200 zł</div>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-spa" style="font-size: 36px; color: #c9a96e;"></i>
+            <h3>Pielęgnacja</h3>
+            <p>Odbudowujące zabiegi keratynowe, botox na włosy i aromaterapia skóry głowy.</p>
+            <div class="price">od 150 zł</div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="uslugi.html" class="btn">Pełny Cennik</a>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section">
+    <div class="section-title">
+        <h2>Nasze Prace</h2>
+        <div class="line"></div>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600" alt="Fryzura 1">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600" alt="Fryzura 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600" alt="Fryzura 3">
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="galeria.html" class="btn">Zobacz Więcej</a>
+    </div>
+</section>
+
+<!-- OPIINIE -->
+<section class="section" style="background: #0a0a0a;">
+    <div class="section-title">
+        <h2>Co Mówią Klienci</h2>
+        <div class="line"></div>
+    </div>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p>"Najlepszy salon fryzjerski w Warszawie! Pani Kasia ma złote ręce, a atmosfera jest niesamowita. Zawsze wychodzę z uśmiechem."</p>
+            <span class="author">&mdash; Anna Kowalska</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"Profesjonalne podejście i świetny efekt. Balayage wykonane perfekcyjnie, kolorystyka dokładnie taka, jak chciałem. Polecam!"</p>
+            <span class="author">&mdash; Marek Nowak</span>
+        </div>
+        <div class="testimonial-card">
+            <p>"Salon z duszą, świetna ekipa i rewelacyjne efekty. Moje włosy nigdy nie wyglądały lepiej. Stała klientka!"</p>
+            <span class="author">&mdash; Julia Wiśniewska</span>
+        </div>
+    </div>
+</section>
+
+<!-- KONTAKT CTA -->
+<section class="section" style="text-align: center;">
+    <h2 style="font-size: 36px; color: #fff; margin-bottom: 20px;">Zarezerwuj Swoją Wizytę</h2>
+    <p style="color: #999; margin-bottom: 30px;">Zadzwoń lub napisz — znajdziemy dla Ciebie najlepszy termin.</p>
+    <a href="kontakt.html" class="btn btn-filled">Skontaktuj Się</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Salon Elegancja. Wszelkie prawa zastrzeżone.</p>
+    <a href="../../omnie.html" class="back-link">&larr; Powrót do Portfolio</a>
+</footer>
+
+</body>
+</html>
