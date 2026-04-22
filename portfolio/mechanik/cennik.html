@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennik | AutoSerwis MAX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">AUTO<span>SERWIS</span> MAX</a>
+        <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="o-nas.html">O Nas</a></li>
+            <li><a href="uslugi.html">Usługi</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div style="height: 75px;"></div>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Serwis Podstawowy</h2>
+        <div class="line"></div>
+    </div>
+    <table class="cennik-table">
+        <tr>
+            <th>Usługa</th>
+            <th style="text-align: right;">Cena od</th>
+        </tr>
+        <tr><td>Wymiana oleju silnikowego + filtr</td><td class="price">120 zł</td></tr>
+        <tr><td>Wymiana filtra powietrza</td><td class="price">30 zł</td></tr>
+        <tr><td>Wymiana filtra kabinowego</td><td class="price">40 zł</td></tr>
+        <tr><td>Wymiana filtra paliwa</td><td class="price">60 zł</td></tr>
+        <tr><td>Wymiana płynu hamulcowego</td><td class="price">80 zł</td></tr>
+        <tr><td>Wymiana płynu chłodniczego</td><td class="price">90 zł</td></tr>
+        <tr><td>Wymiana świec zapłonowych</td><td class="price">60 zł</td></tr>
+        <tr><td>Wymiana rozrządu</td><td class="price">od 400 zł</td></tr>
+    </table>
+</section>
+
+<section class="section" style="background: #1a1a1a;">
+    <div class="section-title">
+        <h2>Hamulce i Zawieszenie</h2>
+        <div class="line"></div>
+    </div>
+    <table class="cennik-table">
+        <tr>
+            <th>Usługa</th>
+            <th style="text-align: right;">Cena od</th>
+        </tr>
+        <tr><td>Wymiana klocków hamulcowych (przód)</td><td class="price">120 zł</td></tr>
+        <tr><td>Wymiana tarcz i klocków (przód)</td><td class="price">200 zł</td></tr>
+        <tr><td>Wymiana klocków hamulcowych (tył)</td><td class="price">100 zł</td></tr>
+        <tr><td>Regeneracja zacisków hamulcowych</td><td class="price">150 zł</td></tr>
+        <tr><td>Wymiana amortyzatorów (para)</td><td class="price">180 zł</td></tr>
+        <tr><td>Wymiana łączników stabilizatora</td><td class="price">80 zł</td></tr>
+        <tr><td>Geometria kół 3D</td><td class="price">120 zł</td></tr>
+    </table>
+</section>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Diagnostyka i Elektronika</h2>
+        <div class="line"></div>
+    </div>
+    <table class="cennik-table">
+        <tr>
+            <th>Usługa</th>
+            <th style="text-align: right;">Cena od</th>
+        </tr>
+        <tr><td>Diagnostyka komputerowa podstawowa</td><td class="price">80 zł</td></tr>
+        <tr><td>Diagnostyka komputerowa rozszerzona</td><td class="price">150 zł</td></tr>
+        <tr><td>Weryfikacja przed zakupowa</td><td class="price">250 zł</td></tr>
+        <tr><td>Kodowanie i adaptacje</td><td class="price">od 100 zł</td></tr>
+        <tr><td>Naprawa alternatora / rozrusznika</td><td class="price">od 200 zł</td></tr>
+    </table>
+</section>
+
+<section class="section" style="background: #1a1a1a;">
+    <div class="section-title">
+        <h2>Klimatyzacja i Inne</h2>
+        <div class="line"></div>
+    </div>
+    <table class="cennik-table">
+        <tr>
+            <th>Usługa</th>
+            <th style="text-align: right;">Cena od</th>
+        </tr>
+        <tr><td>Napełnienie klimatyzacji</td><td class="price">150 zł</td></tr>
+        <tr><td>Odgrzybianie klimatyzacji</td><td class="price">100 zł</td></tr>
+        <tr><td>Wymiana opon (komplet)</td><td class="price">80 zł</td></tr>
+        <tr><td>Wyważanie kół (komplet)</td><td class="price">60 zł</td></tr>
+        <tr><td>Przechowalnia opon (sezon)</td><td class="price">120 zł</td></tr>
+    </table>
+    <p style="text-align: center; color: #555; margin-top: 30px; font-size: 13px;">Powyższe ceny są cenami netto za robociznę. Części i materiały eksploatacyjne wyceniane oddzielnie.</p>
+</section>
+
+<section class="section" style="text-align: center;">
+    <h2 style="font-size: 36px; color: #fff; margin-bottom: 15px;">Potrzebujesz dokładnej wyceny?</h2>
+    <p style="color: #888; margin-bottom: 30px;">Skontaktuj się z nami — przygotujemy indywidualną ofertę.</p>
+    <a href="kontakt.html" class="btn">Poproś o Wycenę</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 AutoSerwis MAX. Wszelkie prawa zastrzeżone.</p>
+    <a href="../../omnie.html" class="back-link">&larr; Powrót do Portfolio</a>
+</footer>
+
+</body>
+</html>

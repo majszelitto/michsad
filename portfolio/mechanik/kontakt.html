@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | AutoSerwis MAX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html" class="logo">AUTO<span>SERWIS</span> MAX</a>
+        <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="o-nas.html">O Nas</a></li>
+            <li><a href="uslugi.html">Usługi</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div style="height: 75px;"></div>
+
+<section class="section">
+    <div class="section-title">
+        <h2>Skontaktuj Się z Nami</h2>
+        <div class="line"></div>
+    </div>
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h3>Dane Kontaktowe</h3>
+            
+            <div class="info-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>ul. Przemysłowa 15<br>30-701 Kraków</span>
+            </div>
+            
+            <div class="info-row">
+                <i class="fas fa-phone"></i>
+                <span>+48 12 345 67 89</span>
+            </div>
+            
+            <div class="info-row">
+                <i class="fas fa-envelope"></i>
+                <span>kontakt@autoservismax.pl</span>
+            </div>
+            
+            <div class="info-row">
+                <i class="fas fa-truck"></i>
+                <span>Pomoc drogowa: +48 888 999 000<br>(całodobowo)</span>
+            </div>
+
+            <h3 style="margin-top: 40px;">Godziny Otwarcia</h3>
+            <table class="cennik-table" style="max-width: 400px;">
+                <tr><td>Poniedziałek - Piątek</td><td class="price">8:00 - 18:00</td></tr>
+                <tr><td>Sobota</td><td class="price">9:00 - 14:00</td></tr>
+                <tr><td>Niedziela</td><td class="price">Zamknięte</td></tr>
+            </table>
+        </div>
+
+        <div>
+            <h3 style="font-size: 24px; color: #fff; margin-bottom: 25px;">Formularz Zgłoszeniowy</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Imię i nazwisko</label>
+                    <input type="text" name="name" placeholder="Twoje imię" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="twoj@email.pl" required>
+                </div>
+                <div class="form-group">
+                    <label>Telefon</label>
+                    <input type="tel" name="phone" placeholder="+48 123 456 789">
+                </div>
+                <div class="form-group">
+                    <label>Marka i model auta</label>
+                    <input type="text" name="car" placeholder="np. Volkswagen Golf VII 1.6 TDI">
+                </div>
+                <div class="form-group">
+                    <label>Rocznik</label>
+                    <input type="number" name="year" placeholder="np. 2018" min="1950" max="2030">
+                </div>
+                <div class="form-group">
+                    <label>Typ usługi</label>
+                    <select name="service">
+                        <option value="">-- Wybierz rodzaj usługi --</option>
+                        <option value="diagnostyka">Diagnostyka komputerowa</option>
+                        <option value="przeglad">Przegląd / Serwis</option>
+                        <option value="mechanika">Naprawa mechaniczna</option>
+                        <option value="blacharka">Blacharstwo / Lakiernictwo</option>
+                        <option value="klimatyzacja">Klimatyzacja</option>
+                        <option value="opony">Wulkanizacja</option>
+                        <option value="inne">Inne / nie wiem</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Opis problemu</label>
+                    <textarea name="message" placeholder="Opisz objawy, kiedy się pojawiły, czy lampki się świecą..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none;">Wyślij Zgłoszenie</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 AutoSerwis MAX. Wszelkie prawa zastrzeżone.</p>
+    <a href="../../omnie.html" class="back-link">&larr; Powrót do Portfolio</a>
+</footer>
+
+</body>
+</html>
